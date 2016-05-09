@@ -1,0 +1,648 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+* { /* reset and flatten all bootstrap styling */
+  border-radius: 0 !important;
+}
+
+body {
+  padding-bottom: 40px;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size: 16px;
+}
+
+/* navbar fixed */  
+body {
+  min-height: 1000px;
+  padding-top: 80px;
+}
+
+.grey-bg {
+  background: #f6f6f6;
+}
+
+.orange-text {
+  color:#f9792e;
+}
+
+.white-text {
+  color:#fff;
+}
+
+.grey-text {
+  color:#999;
+}
+
+section {
+  padding:45px 0;
+}
+
+footer section {
+  padding-bottom: 20px;
+}
+
+.nav>li>a.search-btn {
+  height: 80px; /* adjust with nav height*/
+  width:50px;
+  background: url("../img/search-icon.png") center center no-repeat;
+  float: right;
+}
+
+.nav>li>a.search-text {
+  display: inline-block;
+}
+
+
+/* Typography
+-------------------------------------------------- */
+
+.statement p,
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+}
+
+h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+}
+
+h4, h5, h6 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.large-text {
+  font-size: 24px;
+}
+
+h3.section-heading {
+  font-size:30px;
+  margin:20px 0;
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.navbar {
+  background:#fff;  
+  min-height: 80px;
+}
+
+.navbar-brand {
+  height:80px;
+}
+
+.navbar-brand>img {
+  margin-top:5px;
+}
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-nav>li>a {
+  line-height:50px;
+  color:#333;
+}
+
+.nav {
+  font-size:1.1em;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 900px;
+  margin-bottom: 0;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom:initial;
+  top:32%;
+  left:30%;
+  right:30%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 900px;
+  background-color: #777;
+}
+
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  /*height: 500px;*/
+  /*min-height: 800px;*/
+}
+
+.carousel h1 {
+    font-size:55px;
+    font-weight: 300;
+    text-shadow: initial;
+    margin-top: 50px;
+}
+
+.carousel h1 span {
+  color:#f9792e;
+}
+
+.carousel-indicators li {
+  background-color:transparent;
+  border: 2px solid #fff;
+  height:12px;
+  width:12px;
+  border-radius: 50% !important;
+  -webkit-border-radius:75px !important;
+  -moz-border-radius:75px !important;
+}
+
+.carousel-indicators .active {
+    margin: 1px;
+    background-color: #f9792e;
+    border: 2px solid #f9792e;
+}
+
+/* SERVICES CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.services div[class*='col-'] {
+  padding: 0 40px;
+}
+
+.services div[class*='col-'] img {
+  padding:10px;
+}
+
+/* BLOG CAROUSEL CONTENT
+-------------------------------------------------- */
+
+/* Carousel base class */
+#blogCarousel {
+  height: 480px;
+  margin-bottom: 0;
+  padding-top: 55px; /* same amount as carousel controls */
+}
+/* Since positioning the image, we need to help out the caption */
+#blogCarousel .carousel-caption {
+  z-index: 10;
+  bottom:initial;
+  top:50%;
+  left:30%;
+  right:30%;
+}
+
+/* Declare heights because of positioning of img element */
+#blogCarousel.carousel .item {
+  height: 480px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+#blogCarousel .row {
+  padding-top:0;
+  padding-bottom: 0;
+}
+
+#blogCarousel .carousel-indicators {
+  top:0;
+  height:40px;
+}
+
+#blogCarousel .carousel-indicators li {
+  border: 2px solid #cccccc;
+}
+
+#blogCarousel .carousel-indicators .active {
+  border: 2px solid #f9792e;
+}
+
+#blogCarousel .carousel-control.left {
+  top: 55px; /* same amount as padding-top on blogCarousel */
+  left: -12%;
+  background:none;
+}
+
+#blogCarousel .carousel-control.right {
+  top: 55px; /* same amount as padding-top on blogCarousel */
+  right: -12%;
+  background:none;
+}
+
+
+
+
+.blog-home .blog-post {
+  /*min-width:360px;*/
+  margin: 1px;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(204,204,204,1);
+  -moz-box-shadow: 1px 1px 5px 1px rgba(204,204,204,1);
+  box-shadow: 1px 1px 5px 1px rgba(204,204,204,1);
+}
+
+.blog-home .blog-post > div {
+  padding:20px 30px;
+}
+
+.blog-home .blog-post .blog-category {
+  font-size:13px;
+}
+
+.blog-home .blog-post .blog-author-date {
+  font-size:13px;
+}
+
+
+.blog-home .blog-post .blog-snippet {
+  min-height:135px;
+}
+
+.blog-home .blog-post .blog-snippet h4 {
+  margin:8px 0 15px 0;
+  line-height: 1.4;
+}
+
+.blog-home .blog-post .blog-snippet p {
+  line-height:1.2;
+}
+
+.blog-home .blog-post .blog-actions > div a {
+  text-transform: uppercase;
+  color:inherit;
+  font-size: 0.8em;
+}
+
+.blog-home .blog-post .blog-actions > div a span {
+  display: inline-block;
+  border-bottom:solid 1px #f9792e;
+  line-height: 2;
+}
+
+
+.blog-home .blog-post .blog-actions a.blog-like,
+.blog-home .blog-post .blog-actions a.blog-comment {
+  display: inline-block;
+  height:20px;
+  width:20px;
+  margin:0 6px;
+}
+
+.blog-home .blog-post .blog-actions a.blog-like  {
+  background: url("../img/interact-sprite.png") 0 0 no-repeat;
+}
+
+.blog-home .blog-post .blog-actions a.blog-comment {
+  background: url("../img/interact-sprite.png") -20px 0 no-repeat;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 360px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 360px;
+  background-color: #f9792e;
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+body > .container {
+  padding: 0px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.row {
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+}
+
+a.btn-lg {
+  background:transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  min-width: 160px;
+  margin:25px 0;
+}
+
+.btn-lg.focus, .btn-lg:focus,
+.btn-lg.active, .btn-lg:active, 
+.btn-lg:hover,
+.btn-lg.active.focus, .btn-lg.active:focus, .btn-lg.active:hover, .btn-lg:active.focus, .btn-lg:active:focus, .btn-lg:active:hover
+ {
+  background-color:#fff;
+  color:#f9792e;
+  border: 2px solid #f9792e;
+}
+
+
+a.btn-alt {
+  border: 2px solid #f9792e;
+  color:#333;
+}
+
+footer address .location{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+footer .follow a {
+  height:24px;
+  width:36px;
+  display: inline-block;
+}
+
+footer .follow span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .follow a.fb {
+  background:url("../img/social-sprite.png") 5px 0 no-repeat;
+}
+
+footer .follow a.tw {
+  background:url("../img/social-sprite.png") -30px 0 no-repeat;
+}
+
+footer .follow a.gg {
+  background:url("../img/social-sprite.png") -68px 0 no-repeat;
+}
+
+footer .follow a.ln {
+  background:url("../img/social-sprite.png") -105px 0 no-repeat;
+}
+
+.chevron-left {
+  display: inline-block;
+  height:41px;
+  width:20px;
+  top:50%;
+  left:20%;
+  position: absolute;
+  background: url("../img/chevron-sprite.png") 0 0 no-repeat;
+}
+
+.chevron-right {
+  display: inline-block;
+  height:41px;
+  width:20px;
+  top:50%;
+  right:20%;
+  position: absolute;
+  background: url("../img/chevron-sprite.png") -20px 0 no-repeat;
+}
+
+.chevron-left-white {
+  display: inline-block;
+  height:41px;
+  width:20px;
+  top:50%;
+  left:20%;
+  position: absolute;
+  background: url("../img/chevron-sprite-white.png") 0 0 no-repeat;
+}
+
+.chevron-right-white {
+  display: inline-block;
+  height:41px;
+  width:20px;
+  top:50%;
+  right:20%;
+  position: absolute;
+  background: url("../img/chevron-sprite-white.png") -20px 0 no-repeat;
+}
+
+.navbar-toggle {
+  border: 1px solid #f9792e;
+  border-radius: 4px !important;
+  top: 15px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #f9792e;
+}
+
+.navbar-toggle .icon-bar {
+  border-radius: 1px !important;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media only screen and (max-width : 768px){
+
+  .nav {
+    font-size: 1.5em;
+    background:#f9792e;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .navbar-nav>li>a {
+    line-height: 25px;
+    padding-left: 25px;
+    color:#ffffff;
+  }
+
+  .navbar-nav>li>a:hover {
+    color:inherit;
+  }
+
+  .nav>li>a.search-text {
+    
+  }
+
+  .nav>li>a.search-btn { 
+   
+  }
+
+  #myCarousel.carousel.carousel .item,
+  #myCarousel.carousel {
+    max-height: 276px;
+  }
+
+  #myCarousel.carousel.carousel .carousel-caption {
+    top:0;
+    left:11%;
+    right:11%;
+    padding:0;
+  }
+
+  #myCarousel.carousel.carousel .carousel-control.left {
+
+  }
+
+  #myCarousel.carousel.carousel .carousel-control.right {
+
+  }
+
+  a.btn-lg {
+    margin: 10px 0;
+  }
+
+  .carousel h1 {
+    font-size: 2em;
+    font-weight: 300;
+    text-shadow: initial;
+    margin-top: 50px;
+  }
+
+  #blogCarousel {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .blog-home .blog-post .blog-snippet {
+    min-height: initial;
+  }
+
+
+  #blogCarousel.carousel,
+  #blogCarousel.carousel .item {
+    height: 1620px;
+  }
+  
+  #blogCarousel.carousel .item > div {
+    margin-bottom: 15px;
+  }
+
+  #blogCarousel .carousel-control.left
+  {
+    left:-15%;
+  }
+
+  #blogCarousel .carousel-control.right
+  {
+    right:-15%;
+  }
+
+  .footer {
+    height:auto;
+  }
+
+  .footer .text-left {
+    text-align: center !important;
+  }
+
+  .follow {
+    text-align: center !important;
+    margin:15px 0;
+  }
+}
+
+@media only screen 
+and (min-width : 414px) 
+and (max-width : 736px) 
+and (orientation : portrait) { 
+  #blogCarousel.carousel, #blogCarousel.carousel .item
+  {
+    height: 1300px;
+  }
+}
+
+
+
+@media only screen and (min-width : 992px){
+  #myCarousel.carousel.carousel .item,
+  #myCarousel.carousel {
+    max-height: 420px;
+  }
+
+  #myCarousel.carousel.carousel .carousel-caption {
+    top:14%;
+    left:11%;
+    right:11%;
+    padding:0;
+  }
+
+  #blogCarousel {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  #blogCarousel .carousel-control.left
+  {
+    left:-8%;
+  }
+
+  #blogCarousel .carousel-control.right
+  {
+    right:-8%;
+  }
+
+  .chevron-left-white,
+  .chevron-right-white {
+    top:45%;
+  }
+
+  .blog-home .blog-post .blog-snippet {
+    min-height: 160px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+  @media only screen and (max-width : 1200px){
+      
+  }
